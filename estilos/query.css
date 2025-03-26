@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
+
+@media screen and (max-width: 1200px) {
+    
+    #banner, 
+    #banner > img {
+        display: none;
+    }
+
+    #mensagem {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+/* CELULARES */
 @media screen and (max-width: 768px) {
     #nav-list, 
     .peca-aqui {
