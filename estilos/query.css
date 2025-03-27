@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* TABLET */
+
 
 @media screen and (max-width: 1200px) {
     
@@ -7,23 +9,84 @@
     #banner > img {
         display: none;
     }
-
+    #inicio {
+        min-height: calc(80vh - 103.4px);
+    }
     #mensagem {
         width: 100%;
         text-align: center;
     }
-
+    #pratos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .opcao-prato {
+        width: calc(50% - 25px);
+    }
+    .p-fav {
+        width: 40%;
+    }
+    #avaliacoes {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #selo-ifood {
+        display: none;
+    }
+    #tripadvisor {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo-ter {
+        text-align: center;
+    }
+   
 }
 
 
-/* CELULARES */
+/* CELULAR */
+
+
 @media screen and (max-width: 768px) {
     #nav-list, 
     .peca-aqui {
         display: none;
     }
-
     #mobile-btn {
         display: block;
+    }
+    #pratos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .titulo-sec {
+        font-size: 1.3rem;
+    }
+    .titulo-ter {
+        font-size: 1.6rem;
+    }
+    .opcao-prato {
+        width: 80%;
+    }
+    .p-fav {
+        width: 35%;
+    }
+    #tripadvisor {
+        text-align: center;
+        gap: 8px;
+        width: 70%;
+    }
+    .comentarios {
+        flex-direction: column;
+        text-align: center;
+    }
+    #i-endereco {
+        font-size: .6rem;
+        width: 70%;
+    }
+    #direitos {
+        font-size: .8rem;
+        width: 30%;
     }
 }
